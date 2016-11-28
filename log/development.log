@@ -20975,3 +20975,44 @@ Processing by UploadsController#show as HTML
 Completed 200 OK in 224ms (Views: 215.9ms | ActiveRecord: 6.2ms)
 
 
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:41:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (7.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (0.9ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (1.0ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (74.9ms)
+Completed 200 OK in 1739ms (Views: 1627.1ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:47:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (0.9ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (0.5ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 1461ms (Views: 1401.3ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:47:57 -0500
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (0.5ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (0.8ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 403ms (Views: 399.0ms | ActiveRecord: 2.5ms)
+
+

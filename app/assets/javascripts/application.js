@@ -55,14 +55,14 @@ $(document).ready(function() {
         controls = new THREE.OrbitControls( camera );
 
         for ( var i = 0; i < 600; i ++ ) {
-          var radius   = 100,
+          var radius   = 75,
               segments = 64,
           geometry = new THREE.CircleGeometry( radius, segments );
        geometry.vertices.push(new THREE.Vector3(-10, 0, 0));
        geometry.vertices.push(new THREE.Vector3(0, 10, 0));
        geometry.vertices.push(new THREE.Vector3(10, 0, 0));
           material = new THREE.LineBasicMaterial({
-            color: 0x000000
+            color: 0xffff00
         });
           var line = new THREE.Line(geometry, material);
           scene.add(line);
@@ -98,7 +98,7 @@ geometry.vertices.shift();
           console.log(frequencyData);
 
           for ( var i = 0; i < (cubesArray.length * .1); i ++ ) {
-            // bg.background = ('#000000')
+            bg.background = ('#000000')
              camera.position.z = 150;
              cubesArray[i].position.x = (frequencyData[i] / 10)
              cubesArray[i].position.y = (frequencyData[i] / 10)
