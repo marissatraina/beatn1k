@@ -20813,3 +20813,165 @@ Processing by UploadsController#show as HTML
 Completed 200 OK in 1621ms (Views: 1556.6ms | ActiveRecord: 13.5ms)
 
 
+Started GET "/uploads/new" for 127.0.0.1 at 2016-11-27 21:26:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#new as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 1085ms (Views: 1027.1ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-27 21:27:02 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9cHQniQfRMw+4IygMusQyjMY0zCAhGQ4rJmhOl/IMEFdUjIdCRzZ5zPpoX53nrkvSTZAUYFHx0q8M7OkbtunRA==", "user"=>{"user_name"=>"swedish_chef"}, "password"=>"[FILTERED]", "commit"=>"Create User"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "swedish_chef"], ["LIMIT", 1]]
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (3.6ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 283ms (Views: 150.4ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-27 21:27:28 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9cHQniQfRMw+4IygMusQyjMY0zCAhGQ4rJmhOl/IMEFdUjIdCRzZ5zPpoX53nrkvSTZAUYFHx0q8M7OkbtunRA==", "user"=>{"user_name"=>"swedish_chef"}, "password"=>"[FILTERED]", "commit"=>"Create User"}
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "swedish_chef"], ["LIMIT", 1]]
+  [1m[36mUser Exists (5.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 193ms (Views: 162.8ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-11-27 21:27:41 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 199ms (Views: 198.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-27 21:28:16 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOOGj/U6lKem/IWC0Bw6gefwWThlCwbfa1j8KzMbnjsccGQM2DkJjKv1qFyVaZNknd7KWWTIpa178u61AggJPg==", "user"=>{"user_name"=>"a", "email"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "a"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 313ms (Views: 163.9ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-27 21:28:25 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UVgjDjCqx01g/OHhwp3Lp0mwMM0q/dawC4VE9ACSPa75y8GNHalaZm31zD+H6GJCM56jrCs+dcIbL1ZqMYGqqw==", "user"=>{"user_name"=>"a", "email"=>"b", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "a"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 242ms (Views: 217.2ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-11-27 21:28:30 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z5/Y0r9Km/bkIFZgbx6CMlozINFFQLreg/cckbwGPubPDDpRkkkG3ekpe74qayvXIB2zsESDGayTXQ4PjRWp4w==", "user"=>{"user_name"=>"a", "email"=>"b", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "a"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password_digest", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_name", "a"], ["password_digest", "$2a$10$huBtrwRp2zli5T/iat3Rquk3UByUn9sTa.C31ztqHramRjZQE7LlO"], ["email", "b"], ["created_at", 2016-11-28 02:28:31 UTC], ["updated_at", 2016-11-28 02:28:31 UTC]]
+  [1m[35m (22.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUpload Load (0.9ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  [1m[36mUpload Load (0.5ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/uploads/1
+Completed 302 Found in 191ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/uploads/1" for 127.0.0.1 at 2016-11-27 21:28:31 -0500
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUpload Load (0.7ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (0.6ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 195ms (Views: 190.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/uploads/new" for 127.0.0.1 at 2016-11-27 21:28:37 -0500
+Processing by UploadsController#new as HTML
+  Rendering uploads/new.html.erb within layouts/application
+  Rendered uploads/new.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 233ms (Views: 231.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2016-11-27 21:28:50 -0500
+Processing by UploadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nG1+KlixGGNO+yrwOeukhOnUNik6YvTVeMfvZflWI0M0/pypdbKFSEPyBy58ng1hk/qlSDuhV6dobf37yEW0Rg==", "upload"=>{"title"=>"adele", "file_info"=>#<ActionDispatch::Http::UploadedFile:0x005630bd080cc0 @tempfile=#<Tempfile:/tmp/RackMultipart20161127-15010-aqy7zh.mp3>, @original_filename="Adele - Someone Like You.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"upload[file_info]\"; filename=\"Adele - Someone Like You.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Upload"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "uploads" ("title", "file_name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "adele"], ["file_name", "Adele - Someone Like You.mp3"], ["user_id", 2], ["created_at", 2016-11-28 02:28:50 UTC], ["updated_at", 2016-11-28 02:28:50 UTC]]
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/uploads/2
+Completed 302 Found in 104ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:28:50 -0500
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (0.6ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (1.0ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 159ms (Views: 152.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:33:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (0.9ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (2.7ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 1827ms (Views: 1757.1ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:37:44 -0500
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (0.8ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (0.7ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 324ms (Views: 320.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/uploads/2" for 127.0.0.1 at 2016-11-27 21:37:52 -0500
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUpload Load (1.5ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpload Load (3.5ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 224ms (Views: 215.9ms | ActiveRecord: 6.2ms)
+
+

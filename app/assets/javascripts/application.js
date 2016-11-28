@@ -55,8 +55,9 @@ $(document).ready(function() {
         controls = new THREE.OrbitControls( camera );
 
         for ( var i = 0; i < 600; i ++ ) {
-
-          geometry = new THREE.Geometry();
+          var radius   = 100,
+              segments = 64,
+          geometry = new THREE.CircleGeometry( radius, segments );
        geometry.vertices.push(new THREE.Vector3(-10, 0, 0));
        geometry.vertices.push(new THREE.Vector3(0, 10, 0));
        geometry.vertices.push(new THREE.Vector3(10, 0, 0));
@@ -72,7 +73,7 @@ $(document).ready(function() {
 
           line.rotation.x = Math.random() * 2 * Math.PI;
           line.rotation.y = Math.random() * 2 * Math.PI;
-
+geometry.vertices.shift();
           scene.add(line);
           cubesArray.push( line )
 
