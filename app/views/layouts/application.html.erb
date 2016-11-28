@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beatnik</title>
+    <%= csrf_meta_tags %>
+
+    <script src="http://brangerbriz.net/labs/threejs_playGnd/js/three.min.js"></script>
+    <script src="http://brangerbriz.net/labs/threejs_playGnd/js/Detector.js"></script>
+    <script src="https://dl.dropboxusercontent.com/u/3587259/Code/Threejs/OrbitControls.js"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
