@@ -61,7 +61,7 @@ $(document).ready(function() {
        geometry.vertices.push(new THREE.Vector3(0, 10, 0));
        geometry.vertices.push(new THREE.Vector3(10, 0, 0));
           material = new THREE.LineBasicMaterial({
-            color: 0x0000ff
+            color: 0x000000
         });
           var line = new THREE.Line(geometry, material);
           scene.add(line);
