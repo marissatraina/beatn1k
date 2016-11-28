@@ -142,6 +142,7 @@ $(document).ready(function() {
           console.log(frequencyData);
 
           for ( var i = 0; i < (cubesArray.length * .1); i ++ ) {
+            // bg.background = ('#000000')
              camera.position.z = 150;
              cubesArray[i].position.x = (frequencyData[i] / 10)
              cubesArray[i].position.y = (frequencyData[i] / 10)
@@ -185,21 +186,21 @@ $(document).ready(function() {
           }
           for ( var i = (cubesArray.length * .7); i < (cubesArray.length * .8); i ++ ) {
              camera.position.z = 150;
-             cubesArray[i].position.x = (frequencyData[i] / 10)
+             cubesArray[i].position.x = -(frequencyData[i] / 10)
              cubesArray[i].position.y = (frequencyData[i] / 10)
              cubesArray[i].position.z = (frequencyData[i] / 10)
           }
           for ( var i = (cubesArray.length * .8); i < (cubesArray.length * .9); i ++ ) {
              camera.position.z = 150;
              cubesArray[i].position.x = (frequencyData[i] / 10)
-             cubesArray[i].position.y = (frequencyData[i] / 10)
+             cubesArray[i].position.y = -(frequencyData[i] / 10)
              cubesArray[i].position.z = (frequencyData[i] / 10)
           }
           for ( var i = (cubesArray.length * .9); i < cubesArray.length; i ++ ) {
              camera.position.z = 150;
              cubesArray[i].position.x = (frequencyData[i] / 10)
              cubesArray[i].position.y = (frequencyData[i] / 10)
-             cubesArray[i].position.z = (frequencyData[i] / 10)
+             cubesArray[i].position.z = -(frequencyData[i] / 10)
           }
 
 

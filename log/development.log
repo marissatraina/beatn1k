@@ -20730,3 +20730,14 @@ Processing by UploadsController#show as HTML
 Completed 200 OK in 231ms (Views: 226.6ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/uploads/1" for 127.0.0.1 at 2016-11-27 20:50:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UploadsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUpload Load (0.9ms)[0m  [1m[34mSELECT  "uploads".* FROM "uploads" WHERE "uploads"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering uploads/show.html.erb within layouts/application
+  [1m[36mUpload Load (0.5ms)[0m  [1m[34mSELECT "uploads".* FROM "uploads"[0m
+  Rendered uploads/show.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 1637ms (Views: 1545.8ms | ActiveRecord: 12.2ms)
+
+
